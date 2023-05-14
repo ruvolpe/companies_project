@@ -8,8 +8,19 @@
     padding: 22px 32px;
     background-color: var(--grey-5);
 }
+.user__name{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-2);
+}
 
-.company__info{
+.user__email{
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-3);
+}
+
+.company__info--empty{
     border: 1px solid var(--grey-2);
     display: flex;
     flex-direction: column;
@@ -26,14 +37,34 @@
     line-height: var(--line-height-1);
 }
 
-.user__name{
-    font-size: var(--font-size-2);
+.company__info--info{
+    border: 1px solid var(--grey-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 16px 140px;
+}
+
+.header__info{
+    width: 100%;
+    background-color: var(--brand-color-1);
+    color: var(--grey-6);
+    text-align: center;
+    font-size: var(--font-size-3);
     font-weight: var(--font-weight-1);
+    line-height: var(--line-height-1);
+}
+
+.hired__employee--card{
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid var(--brand-color-1);
+}
+
+.employee__name{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
     line-height: var(--line-height-2);
 }
 
-.user__email{
-    font-size: var(--font-size-4);
-    font-weight: var(--font-weight-3);
-    line-height: var(--line-height-3);
-}

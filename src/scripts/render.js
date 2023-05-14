@@ -84,20 +84,37 @@ export async function renderUserPage() {
   let companyInfoContainer = document.querySelector(".company__info");
   let emptyCompany = document.createElement("h2");
 
-  console.log(user)
-
-  let company = await requestCompanyById(user.company_id)
-  console.log(company)
-  let department = await requestDepartmentById(user.department_id)
   
   if (user.company_id === null) {
     emptyCompany.classList.add("empty__company--title");
     emptyCompany.innerText = "Você ainda não foi contratado";
     companyInfoContainer.append(emptyCompany);
+    companyInfoContainer.classList.add("company__info--empty")
   } else {
-    let header = document.createElement("h2")
+    companyInfoContainer.classList.add("company__info--info")
+
+    let company = await requestCompanyById(user.company_id)
+    let department = await requestDepartmentById(user.department_id)
+    let hiredEmployees = company.employees
+
+    let headerWrapper = document.createElement("div")
+    let header = document.createElement("p")
     header.innerText = `${company.name} - ${department.name}`
-    companyInfoContainer.append(header)
+    headerWrapper.classList.add("header__info")
+    headerWrapper.append(header)
+    companyInfoContainer.append(headerWrapper)
+    hiredEmployees.forEach((employee)=>{
+      let employeeCard = document.createElement("div")
+      let employeeName = document.createElement("p")
+      employeeName.innerText = employee.name
+      employeeName.classList.add("employee__name")
+      employeeCard.classList.add("hired__employee--card")
+      employeeCard.append(employeeName)
+      companyInfoContainer.append(employeeCard)
+
+    })
+
+
   }
 }
 const companySelector = document.querySelector("#companies__select");
