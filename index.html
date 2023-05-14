@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <script type="module" defer src="./src/scripts/homepage.js"></script>
+    <title>Kenzie Empresas</title>
+</head>
+<body>
+    <nav class="nav__container">
+        <div class="nav__logo">
+            <img src="./src/assets/Group 42.svg" alt="Kenzie Empresas Logo">
+        </div>
+        <div class="nav__buttons--container">
+            <button class="nav__button" id="logIn">
+                Log In
+            </button>
+            <button class="nav__button" id="signUp">
+                Cadastro
+            </button>            
+        </div>
+    </nav>
+    <main class="main__container">
+        <section class="main__image--container">
+        </section>
+        <section class="main__list--container">
+            <div class="list__selector--container">
+                <select name="sectors" id="sector__select" class="select">
+                    <option value="">Selecionar Setor</option>
+                </select>
+            </div>
+            <div class="list__container">
+                <h1 class="list__title">Lista de Empresas</h1>
+                <div class="list__results--container">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

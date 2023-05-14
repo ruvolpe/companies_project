@@ -1,0 +1,118 @@
+main{
+    padding: 16px 140px;
+}
+
+.selector__wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#companies__select{
+    width: 25%;
+    background-color: var(--brand-color-1);
+    color: var(--grey-6);
+    height: 52px;
+    padding:16px;
+    font-size: var(--font-size-3);
+}
+
+.departments__header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.create__department--button{
+    width: 150px;
+    background-color: var(--brand-color-1);
+    color: var(--grey-6);
+    height: 52px;
+    padding:16px;
+    font-size: var(--font-size-3);
+}
+
+.title{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-1);
+}
+
+.departments__container{
+    background-color: var(--grey-5);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 20px;
+    height: 30vh;
+    box-shadow: var(--grey-3) 0px 8px 24px;
+}
+
+.department__card{
+    width: calc(50% - 20px);
+    border: solid var(--brand-color-1) 1px;
+    background-color: var(--grey-6);
+    height: 145px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.employee__card{
+    width: calc(50% - 20px);
+    border: solid var(--brand-color-1) 1px;
+    background-color: var(--grey-6);
+    height: 145px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.users__container{
+    background-color: var(--grey-5);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 20px;
+    height: 30vh;
+    box-shadow: var(--grey-3) 0px 8px 24px;
+}
+
+.info__wrapper{
+    display:flex;
+    flex-direction: column;
+    padding: 18px 29px;
+}
+
+.button__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding:35px;
+}
+
+.department__name{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-2);
+}
+
+.departmet__description{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-2);
+}
+
+.crud__button{
+    height: 22px;
+    width: 32px;
+}
+
+.employee__name--title{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-2);
+    padding: 18px 29px;
+}

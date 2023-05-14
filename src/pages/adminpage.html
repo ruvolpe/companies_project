@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <script type="module" src="../scripts/adminpage.js" defer></script>
+    <title>Kenzie Empresas</title>
+</head>
+<body>
+    <nav class="nav__container">
+        <div class="nav__logo">
+            <img src="../assets/Group 42.svg" alt="Kenzie Empresas Logo">
+        </div>
+        <div class="nav__buttons--container">
+            <button class="nav__button" id="home">
+                Logout
+            </button>       
+        </div>
+    </nav>
+    <main>
+        <section class="selector__wrapper">
+            <select name="companies" id="companies__select" class="companies__select">
+                <option value="">Selecionar Empresa</option>
+            </select>
+        </section>
+        <section class="departments__wrapper">
+            <div class="departments__header">
+                <h2 class="title">
+                    Departamentos
+                </h2>
+                <button class="create__department--button">
+                    + Criar
+                </button>
+            </div>
+            <div class="departments__container"></div>
+            <div>
+
+            </div>
+            <div>
+                <h2 class="title">
+                    Usuários Cadastrados
+                </h2>
+                <div class="users__container"></div>
+            </div>
+        </section>
+    </main>
+    <dialog id="modalContainer">
+    </dialog>
+</body>
+</html>

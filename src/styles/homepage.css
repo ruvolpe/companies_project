@@ -1,0 +1,112 @@
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 140px;
+    border-bottom: 1px solid var(--grey-4);
+}
+
+.nav__logo{
+
+}
+
+.nav__buttons--container{
+    display: flex;
+    gap: 11px;
+}
+
+.nav__button{
+    width: 142px;
+    height: 48px;
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-1);
+    border: solid 1px var(--brand-color-1);
+    color: var(--brand-color-1);
+    background-color: var(--grey-6);
+}
+
+.nav__button:hover{
+    background-color: var(--brand-color-1);
+    color: var(--grey-6);
+}
+
+.main__container{
+    margin: 43px 140px;
+    max-height: calc(100vh - 156px);
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.main__image--container{
+    height: calc(100vh - 156px);
+    width: calc(50vw - 60px);
+    background-image: url(../assets/Rectangle\ 6.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.main__list--container{
+    max-height: calc(100vh - 156px);
+    width: calc(50vw - 60px);
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.list__selector--container{
+    min-width:100%;
+}
+
+.select{
+    width: 100%;
+    background-color: var(--brand-color-1);
+    color: var(--grey-6);
+    height: 52px;
+    padding:16px;
+    font-size: var(--font-size-3);
+}
+
+.list__container{
+    box-shadow: var(--grey-3) 0px 8px 24px;
+    width: 100%;
+    padding: 27px 33px 10px 33px;
+    overflow-y: scroll;
+}
+
+.list__title{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-2);
+}
+
+.list__results--container{
+    overflow: scroll;
+}
+
+.company__card{
+    border: solid 1px var(--brand-color-1);
+    height: 116px;
+    margin: 12px 0px;
+    width: 100%;
+    padding: 21px 25px;
+}
+
+.company__title{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-2);
+}
+
+.company__paragraph{
+    border: 1px solid var(--brand-color-1);
+    color: var(--brand-color-1);
+    width: fit-content;
+    padding: 0px 20px;
+    border-radius: 250px;
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-3);
+}

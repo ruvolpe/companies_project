@@ -1,0 +1,59 @@
+.title__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-1);
+}
+
+.close__modal{
+    background-color: var(--grey-6);
+    height: 25px;
+    width: 25px;
+    position:absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.department__description{
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-3);
+    line-height: var(--line-height-1);
+}
+
+.select__container{
+    width: 100;
+}
+
+.user__select{
+    width: 500px;
+    height:50px;
+    margin-right: 10px;
+}
+
+.hire__button{
+    height: 50px;
+    background-color: var(--sucess);
+    color: var(--grey-6);
+    padding: 16px 40px;
+}
+
+.user__container{
+
+}
+
+.user__card{
+
+}
+
+.user__name{
+
+}
+
+.fire__button{
+    
+}
