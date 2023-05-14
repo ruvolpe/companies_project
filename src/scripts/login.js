@@ -4,11 +4,12 @@ function redirect(){
     let signUp = document.querySelectorAll(".signUp")
     let home = document.querySelector("#home")
 
-    signUp.forEach((button =>{
+    signUp.forEach((button) =>{
         button.addEventListener("click", ()=>{
+            console.log("oi")
             window.location.replace("./signUp.html")
         })
-    }))
+    })
 
     home.addEventListener("click", ()=>{
         console.log("click")

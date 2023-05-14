@@ -5,6 +5,7 @@ function redirect(){
     let home = document.querySelectorAll(".home")
 
     logIn.addEventListener("click", ()=>{
+        window.location.replace("./login.html")
     })
     
     home.forEach((button) =>{
