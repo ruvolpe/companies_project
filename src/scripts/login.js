@@ -7,7 +7,7 @@ function redirect(){
     signUp.forEach((button) =>{
         button.addEventListener("click", ()=>{
             console.log("oi")
-            window.location.replace("./signUp.html")
+            window.location.replace("././signUp.html")
         })
     })
 

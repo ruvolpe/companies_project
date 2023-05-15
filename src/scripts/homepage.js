@@ -5,11 +5,11 @@ function redirect(){
     let signUp = document.querySelector("#signUp")
 
     logIn.addEventListener("click", ()=>{
-        window.location.replace("./src/pages/logIn.html")
+        window.location.replace("././src/pages/logIn.html")
     })
 
     signUp.addEventListener("click", ()=>{
-        window.location.replace("./src/pages/signUp.html")
+        window.location.replace("././src/pages/signUp.html")
     })
 }
 
