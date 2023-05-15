@@ -56,9 +56,9 @@ export async function loginRequest(loginBody) {
       );
       localStorage.setItem("@kenzieempresas:isAdm", JSON.stringify(isAdm));
       if (isAdm) {
-        location.replace("./adminpage.html");
+        location.replace("././adminpage.html");
       } else {
-        location.replace("./userpage.html");
+        location.replace("././userpage.html");
       }
     } else {
       const responseJSON = await response.json();
@@ -81,7 +81,7 @@ export async function signupRequest(signupBody) {
       localStorage.setItem("@kenzieempresas:id", JSON.stringify(id));
       localStorage.setItem("@kenzieempresas:name", JSON.stringify(name));
       localStorage.setItem("@kenzieempresas:email", JSON.stringify(email));
-      location.replace("./login.html");
+      location.replace("././login.html");
     } else {
       const responseJSON = await response.json();
       console.log(responseJSON.message);
